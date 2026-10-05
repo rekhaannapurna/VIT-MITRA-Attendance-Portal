@@ -1,676 +1,598 @@
-# VIT MITRA Club – Attendance Management & Analytics
+# 🎓 VIT MITRA CLUB — Attendance Management & Analytics Platform
 
-A secure, role-based web application designed to centralize and simplify attendance management for the **VIT MITRA Club**.
+<p align="center">
 
-The system replaces manual attendance maintenance with a centralized platform for managing students, teams, daily attendance, attendance history, analytics, and low-attendance identification.
+### 📊 Smart • Secure • Centralized Attendance Management
 
----
+**A web-based attendance management and analytics platform for VIT MITRA Club at Vishnu Institute of Technology.**
 
-## 📌 Project Overview
+<p align="center">
+  <a href="https://vit-mitra-attendance.vercel.app/">
+    <strong>🚀 Live Website</strong>
+  </a>
+  •
+  <a href="https://github.com/rekhaannapurna/VIT-MITRA-Attendance-Portal">
+    <strong>💻 Source Code</strong>
+  </a>
+</p>
 
-The **VIT MITRA Club – Attendance Management & Analytics Web Application** is designed for two primary users:
-
-* **Admin**
-* **Student**
-
-Administrators can manage students, teams, attendance, and analytics, while students have view-only access to their own attendance information.
-
-The system supports the four initial VIT MITRA teams:
-
-* Vibe Coding
-* AI
-* Industrial Connect
-* Marketing
-
-The application is designed to maintain accurate attendance records while providing individual, weekly, monthly, team-wise, and overall attendance analytics.
+</p>
 
 ---
 
-## 🎯 Objectives
+## 🌐 Live Application
 
-The main objectives of the system are to:
+### 🚀 [Open VIT MITRA Attendance Portal](https://vit-mitra-attendance.vercel.app/)
 
-* Replace manual attendance maintenance.
-* Centralize student and team information.
-* Simplify daily attendance marking.
-* Prevent duplicate attendance records.
-* Provide accurate attendance percentage calculations.
-* Provide weekly and monthly attendance analysis.
-* Provide team-wise attendance analytics.
-* Provide overall club attendance analytics.
-* Identify students with low attendance.
-* Maintain secure role-based access.
-* Protect attendance data from unauthorized modification.
+The application provides separate access paths for:
 
----
+* 👨‍🎓 **Students**
+* 🛡️ **Club Administrators**
+* 📝 **Student Account Registration**
+* 📊 **Attendance Dashboard**
+* 👥 **Team Management**
+* 📈 **Attendance Analytics**
+* 📅 **Attendance History**
 
-## 👥 User Roles
-
-### 👨‍💼 Admin
-
-Administrators have full management access to:
-
-* Student records
-* Team records
-* Student-team assignments
-* Daily attendance
-* Attendance history
-* Attendance corrections
-* Attendance analytics
-* Search and filtering
-* Low-attendance identification
-
-### 👨‍🎓 Student
-
-Students have view-only access to:
-
-* Their profile information
-* Their team information
-* Personal attendance history
-* Attendance percentage
-* Weekly attendance
-* Monthly attendance
-
-Students cannot modify attendance, team membership, or administrative data.
+> **Live URL:** https://vit-mitra-attendance.vercel.app/
 
 ---
 
-# ✨ Core Features
+## 📌 About the Project
 
-## 🔐 Authentication & Authorization
+**VIT MITRA Club — Attendance Management & Analytics Platform** is a centralized web application designed to digitize and simplify attendance management for VIT MITRA Club.
 
-The system provides secure authentication and role-based authorization.
+The platform replaces manual attendance tracking with a structured digital system where administrators can manage students and attendance while students can securely access their own attendance information.
 
-### Features
+The application is designed around two primary roles:
 
-* User login
-* Admin and Student roles
-* Role-based access control
-* Protected application pages
-* Backend authorization
-* Secure password handling
-* Logout functionality
-* Unauthorized-access protection
-
-Only authenticated and authorized users can access protected functionality.
+| Role              | Access                                                         |
+| ----------------- | -------------------------------------------------------------- |
+| 👨‍🎓 Student     | Personal attendance, history, profile and account              |
+| 🛡️ Administrator | Student management, attendance management, teams and analytics |
 
 ---
 
-## 👨‍🎓 Student Management
+## 🎯 Project Objectives
 
-Administrators can manage student records.
+The main objectives of VIT MITRA are:
 
-### Student Information
-
-Each student record contains:
-
-* Student ID
-* Name
-* Email
-* Branch
-* Year
-* Section
-* Team
-* Phone
-* Account Status
-
-### Admin Operations
-
-Administrators can:
-
-* Create student records
-* View student records
-* Update student details
-* Deactivate student records
-* Search students
-* Filter students
-* Assign students to teams
-* Change student team assignments
-
-Each Student ID must remain unique.
+* Replace manual attendance maintenance with a centralized digital platform.
+* Provide secure role-based access for students and administrators.
+* Maintain student and team information in an organized system.
+* Allow administrators to record and manage daily attendance.
+* Provide students with transparent access to their attendance.
+* Calculate attendance percentages automatically.
+* Provide attendance history and analytics.
+* Support team-wise attendance monitoring.
+* Identify students who fall below the required attendance threshold.
+* Improve accuracy, accessibility and efficiency of club attendance management.
 
 ---
 
-## 👥 Team Management
+# ✨ Key Features
 
-The system supports team management for VIT MITRA.
+## 👨‍🎓 Student Portal
 
-### Initial Teams
+Students can access their personal attendance information through a dedicated student portal.
 
-1. Vibe Coding
-2. AI
-3. Industrial Connect
-4. Marketing
+### Student features include:
 
-Administrators can:
+* 🔐 Secure student login
+* 📝 Student account creation
+* 👤 Student profile
+* 📊 Personal attendance percentage
+* 📅 Attendance history
+* ✅ Present-session tracking
+* ❌ Absent-session tracking
+* 📈 Attendance status monitoring
+* 🏷️ Team information
 
-* Create teams
-* Edit teams
-* Deactivate teams
-* Assign students to teams
-* Change student team assignments
-
-Historical attendance must remain logically accurate when a student's current team changes.
-
----
-
-# 📝 Daily Attendance Management
-
-Administrators can manage daily attendance for club members.
-
-### Attendance Operations
-
-The system allows administrators to:
-
-* Select an attendance date
-* View students grouped by team
-* Mark students as **Present**
-* Mark students as **Absent**
-* Mark attendance for a team
-* Mark attendance for the entire club
-* Correct existing attendance records
-
-### Attendance Rules
-
-* Attendance status must be either **Present** or **Absent**.
-* A student must have a valid student record.
-* Duplicate attendance for the same student and date/session must be prevented.
-* Attendance changes must update relevant analytics.
-* Historical attendance must remain logically consistent.
+The live application provides a dedicated Student Portal Login and account creation workflow.
 
 ---
 
-# 📚 Attendance History
+## 🛡️ Administrator Portal
 
-The system maintains attendance history for administrators and students.
+Administrators have centralized control over club attendance operations.
 
-### Admin Access
+### Administrator capabilities include:
 
-Administrators can:
+* 🔐 Administrator authentication
+* 📊 Administrative dashboard
+* 👥 Student management
+* ➕ Add students
+* 🔎 Search students
+* 🏷️ Manage teams
+* 📅 Create attendance sessions
+* ✅ Mark students present
+* ❌ Mark students absent
+* 💾 Save attendance records
+* 📈 Attendance analytics
+* 🎯 Attendance threshold monitoring
 
-* View attendance history
-* Search attendance records
-* Filter by student
-* Filter by team
-* Filter by date
-* Filter by date range
-* Filter by attendance status
-
-### Student Access
-
-Students can:
-
-* View their own attendance history
-* View attendance dates
-* View attendance status
-* View attendance percentage
-
-Students cannot edit or delete attendance history.
+The deployed interface includes dashboard statistics, student roster management, team management, attendance marking and attendance-threshold controls.
 
 ---
 
-# 📊 Attendance Analytics
+# 📊 Attendance Management
 
-The application provides multiple levels of attendance analysis.
+The platform provides a structured attendance workflow.
 
-## 👤 Individual Analytics
+### Attendance workflow
 
-For each student, the system provides:
+```text
+Administrator
+      │
+      ▼
+Select Session Date
+      │
+      ▼
+Enter Session Description
+      │
+      ▼
+Select Team
+      │
+      ▼
+Mark Attendance
+      │
+      ├── Present
+      │
+      └── Absent
+      │
+      ▼
+Save Attendance
+      │
+      ▼
+Attendance Records
+      │
+      ▼
+Student Dashboard & Analytics
+```
 
-* Total recorded sessions
+The application supports session date, session description, team filtering, bulk present/absent actions and attendance saving.
+
+---
+
+# 📈 Attendance Analytics
+
+VIT MITRA provides attendance monitoring at both individual and administrative levels.
+
+### Key metrics
+
+* Total students
+* Total teams
+* Total sessions
 * Present sessions
 * Absent sessions
 * Attendance percentage
-* Weekly attendance
-* Monthly attendance
-* Low-attendance identification
+* Students below attendance threshold
+* Team-wise attendance
+* Individual attendance history
 
-### Attendance Percentage
+The deployed dashboard includes total students, total teams, overall attendance, total sessions and below-threshold monitoring.
 
-The attendance percentage is calculated as:
+---
+
+# 🎯 Attendance Threshold
+
+The system provides an attendance threshold mechanism to identify students who require attention.
+
+The deployed application currently displays a **75% minimum attendance requirement** and identifies students requiring attendance intervention based on their calculated attendance rate.
+
+### Attendance calculation
 
 ```text
-Attendance Percentage =
+Attendance Percentage
+        =
 (Present Sessions / Total Recorded Sessions) × 100
 ```
 
-The low-attendance threshold is configurable.
-
 ---
 
-## 👥 Team-wise Analytics
+# 👥 VIT MITRA Teams
 
-The system provides separate attendance analytics for each active team.
+The platform supports multiple club tracks/teams.
 
-Team analytics include:
+The current application interface provides **four active tracks** and a dedicated teams directory.
 
-* Total students
-* Present count
-* Absent count
-* Attendance percentage
-* Weekly attendance analysis
-* Monthly attendance analysis
-
-The system allows administrators to compare attendance statistics across teams without modifying the underlying attendance data.
-
----
-
-## 🏫 Overall Club Analytics
-
-The Admin Dashboard provides overall club attendance statistics.
-
-### Overall Metrics
-
-* Total students
-* Present count
-* Absent count
-* Overall attendance percentage
-* Weekly attendance trends
-* Monthly attendance trends
-
-Changes to attendance records must be reflected in overall analytics.
-
----
-
-# 📈 Dashboard & Visualization
-
-The Admin Dashboard provides an overview of attendance activity.
-
-Dashboard components include:
-
-* Attendance summary cards
-* Weekly attendance trends
-* Monthly attendance trends
-* Team-wise comparison charts
-* Present vs. Absent visualization
-
-Charts should clearly display:
-
-* Dates
-* Teams
-* Values
-* Legends where applicable
-
----
-
-# 🔎 Search & Filtering
-
-The application provides search and filtering functionality for efficient attendance management.
-
-Administrators can search students using:
-
-* Student ID
-* Student Name
-
-Attendance records can be filtered by:
-
-* Team
-* Date
-* Date range
-* Attendance status
-* Student
-
----
-
-# ⚠️ Low Attendance Identification
-
-The system can identify students whose attendance falls below the configured attendance threshold.
-
-This allows administrators to review students who require attendance monitoring.
-
----
-
-# 🔒 Security Requirements
-
-Security is a major requirement of the system.
-
-The application is designed to ensure:
-
-* Protected operations require authentication.
-* Authorization is enforced on the backend.
-* Passwords are securely hashed.
-* Input validation is implemented.
-* Sensitive authentication information is not exposed.
-* Students cannot access administrative operations.
-* Unauthorized API requests are rejected.
-* Invalid student, team, date, and attendance information is rejected.
-
-Attendance data must be protected from unauthorized access or modification.
-
----
-
-# 🧩 Business Rules
-
-The system follows the following core business rules:
-
-1. Only authorized administrators can create, update, or delete student, team, and attendance records.
-2. Students can only view their own attendance information.
-3. Every attendance record must reference a valid student.
-4. A student can have at most one attendance record for a particular attendance date/session.
-5. Attendance percentage is calculated from recorded attendance sessions.
-6. Changing a student's current team must not incorrectly rewrite historical attendance context.
-7. Analytics must be refreshed or recalculated after attendance changes.
-8. The low-attendance threshold must be configurable.
-9. Duplicate Student IDs are not allowed.
-10. Invalid attendance statuses are not allowed.
-11. Historical attendance data must remain logically consistent when students or teams are deactivated.
+The platform can organize students according to their assigned team and monitor attendance across different tracks.
 
 ---
 
 # 🏗️ System Architecture
 
-The SRS defines the following logical architecture:
+The application follows a client-server architecture with cloud-based data management.
 
 ```text
-┌─────────────────────────────┐
-│      Student / Admin        │
-│          Browser            │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       React Frontend        │
-│ HTML / JSX / CSS / Tailwind │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│          REST API           │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│ Spring Boot Backend         │
-│ Spring Security             │
-│ JPA / Hibernate             │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       MySQL Database        │
-└─────────────────────────────┘
+┌───────────────────────────────────────────┐
+│              USER INTERFACE               │
+│                                           │
+│       React / TypeScript / Vite           │
+│                                           │
+│  Student Portal     Administrator Portal  │
+└───────────────────┬───────────────────────┘
+                    │
+                    │ HTTPS / API
+                    ▼
+┌───────────────────────────────────────────┐
+│              BACKEND API                  │
+│                                           │
+│             Python / FastAPI              │
+│                                           │
+│ Authentication • Attendance • Users      │
+│ Teams • Analytics • Notifications        │
+└───────────────────┬───────────────────────┘
+                    │
+                    │ Firebase Admin SDK
+                    ▼
+┌───────────────────────────────────────────┐
+│             CLOUD FIRESTORE               │
+│                                           │
+│ Students • Attendance • Teams             │
+│ Issues • Notifications • Records          │
+└───────────────────────────────────────────┘
 ```
 
-The frontend is responsible for presentation and user interaction.
+---
 
-The backend is responsible for:
+# 🧰 Technology Stack
 
-* Authentication
-* Authorization
-* Business logic
-* Attendance processing
-* Analytics
-* Database access
+## Frontend
 
-The database stores and maintains student, team, and attendance information.
+* **React**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **React Router**
+* **Lucide Icons**
+
+## Backend
+
+* **Python**
+* **FastAPI**
+* **Uvicorn**
+* **REST API**
+* **JWT-based authentication**
+* **Role-based access control**
+
+## Database & Cloud
+
+* **Firebase**
+* **Cloud Firestore**
+* **Firebase Admin SDK**
+
+## Development & Deployment
+
+* **Git**
+* **GitHub**
+* **Antigravity / VS Code**
+* **Vercel**
+* **Render**
 
 ---
 
-# 🛠️ Technology Stack
-
-| Layer             | Technology                                 |
-| ----------------- | ------------------------------------------ |
-| Frontend          | React.js                                   |
-| Markup            | HTML5 / JSX                                |
-| Styling           | CSS / Tailwind CSS                         |
-| Charts            | Recharts                                   |
-| Backend           | Java                                       |
-| Backend Framework | Spring Boot                                |
-| Security          | Spring Security                            |
-| Authentication    | JWT or secure session-based authentication |
-| ORM               | Spring Data JPA / Hibernate                |
-| Database          | MySQL                                      |
-| API               | REST API                                   |
-| API Testing       | Postman                                    |
-| Version Control   | Git & GitHub                               |
-| Development       | VS Code / IntelliJ IDEA                    |
-| Browser           | Chrome / Edge / Firefox                    |
-
-The technology stack above follows the SRS specification.
-
----
-
-# 🔄 Attendance Workflow
+# 📁 Project Structure
 
 ```text
-Admin Login
-     │
-     ▼
+VIT-MITRA-Attendance-Portal/
+│
+├── backend/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   ├── firebase.py
+│   │   │   └── security.py
+│   │   │
+│   │   ├── dependencies/
+│   │   │   └── auth.py
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── attendance.py
+│   │   │   ├── auth.py
+│   │   │   ├── dashboard.py
+│   │   │   ├── issues.py
+│   │   │   ├── notifications.py
+│   │   │   └── users.py
+│   │   │
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   └── main.py
+│   │
+│   ├── scripts/
+│   ├── requirements.txt
+│   └── .env.example
+│
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── mitra-logo-circle.svg
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+│
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tailwind.config.js
+├── tsconfig.json
+├── .gitignore
+└── README.md
+```
+
+---
+
+# 🔐 Security & Access Control
+
+The application separates access according to user roles.
+
+### Student
+
+```text
+Student
+   ↓
+Student Authentication
+   ↓
+Student Dashboard
+   ↓
+Personal Attendance & History
+```
+
+### Administrator
+
+```text
+Administrator
+   ↓
+Admin Authentication
+   ↓
 Admin Dashboard
-     │
-     ▼
-Select Attendance Date
-     │
-     ▼
-Select Team / Club
-     │
-     ▼
-View Students
-     │
-     ▼
-Mark Present / Absent
-     │
-     ▼
-Validate Attendance
-     │
-     ▼
-Save Attendance
-     │
-     ▼
-Update Analytics
-     │
-     ▼
-Student Views Personal Attendance
+   ↓
+Students • Teams • Attendance • Analytics
+```
+
+Sensitive credentials and environment variables should be stored securely through environment configuration and should **never be committed to GitHub**.
+
+---
+
+# 📋 Student Information
+
+The system is designed to maintain structured student information such as:
+
+* Registration Number
+* Full Name
+* College Email
+* Branch
+* Year
+* Section
+* Team
+* Phone Number
+* Account Status
+
+The deployed application includes an administrator workflow for adding student information using these fields.
+
+---
+
+# 📅 Attendance History
+
+Students can view their recorded attendance history.
+
+The student portal provides:
+
+* Session date
+* Session description
+* Team context
+* Attendance status
+
+This gives students a transparent view of their recorded participation.
+
+---
+
+# ☁️ Cloud Data Management
+
+The application uses **Cloud Firestore** for persistent application data.
+
+The deployed interface includes Firestore status information, allowing the application to indicate its cloud data connection state.
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/rekhaannapurna/VIT-MITRA-Attendance-Portal.git
+```
+
+```bash
+cd VIT-MITRA-Attendance-Portal
 ```
 
 ---
 
-# 🧪 Testing Requirements
+## 2. Install frontend dependencies
 
-The system should be tested at multiple levels.
+```bash
+npm install
+```
 
-### Unit Testing
+---
 
-Test:
+## 3. Configure environment variables
 
-* Attendance percentage calculation
-* Analytics calculations
-* Attendance-related business logic
-
-### API Testing
-
-Test:
-
-* Authentication
-* Student APIs
-* Team APIs
-* Attendance APIs
-* Analytics APIs
-
-### Role-Based Access Testing
-
-Verify that:
-
-* Admins can perform administrative operations.
-* Students cannot perform admin operations.
-* Students can access only their own attendance information.
-
-### Database Testing
-
-Verify:
-
-* Student relationships
-* Team relationships
-* Attendance relationships
-* Duplicate attendance prevention
-* Data integrity
-
-### UI Testing
-
-Test:
-
-* Login
-* Attendance marking
-* Attendance filtering
-* Dashboard
-* Analytics
-* Responsive layouts
-
-### Security Testing
-
-Test:
-
-* Unauthorized access
-* Invalid credentials
-* Invalid input
-* Protected API operations
-
-### End-to-End Testing
-
-The complete workflow should be tested:
+Create the required environment configuration based on:
 
 ```text
-Login
-  ↓
-Attendance Marking
-  ↓
-Attendance Storage
-  ↓
-Analytics Calculation
-  ↓
-Student Attendance Viewing
+backend/.env.example
+```
+
+Do not commit private credentials, Firebase service-account keys or production secrets to GitHub.
+
+---
+
+## 4. Install backend dependencies
+
+```bash
+cd backend
+```
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-# ✅ Acceptance Criteria
+## 5. Run the backend
 
-The system is expected to satisfy the following:
-
-* Admin can securely log in.
-* Student can log in.
-* Admin can create, edit, search, and deactivate students.
-* Admin can manage the four initial teams.
-* Admin can assign students to teams.
-* Admin can mark daily attendance.
-* Admin can correct attendance.
-* Duplicate attendance is prevented.
-* Individual attendance percentage is calculated correctly.
-* Weekly analytics are available.
-* Monthly analytics are available.
-* Team-wise analytics are available.
-* Overall club analytics are available.
-* Students cannot modify attendance.
-* Students cannot modify team membership.
-* Low-attendance students can be identified using the configured threshold.
+```bash
+uvicorn app.main:app --reload
+```
 
 ---
 
-# 🚀 Future Enhancements
+## 6. Run the frontend
 
-The SRS identifies the following possible future enhancements:
+From the project root:
 
-* QR-code-based attendance
-* Face-recognition-based attendance
-* Excel/PDF attendance export
-* Automated low-attendance notifications
-* Email notifications
-* WhatsApp notifications
-* Multiple attendance sessions per day
-* Multiple academic years
-* Multiple club batches
-* Administrative audit logs
-* Progressive Web App / mobile application
-* Cloud backup and deployment
+```bash
+npm run dev
+```
 
-Face recognition would require appropriate institutional approval and privacy considerations.
+Then open the local development URL provided by Vite.
 
 ---
 
-# 📁 Project Scope
+# 🌍 Deployment
 
-The system covers the complete attendance-management lifecycle:
+The project can be deployed using:
+
+### Frontend
+
+**Vercel**
 
 ```text
-Authentication
-      ↓
-Student Management
-      ↓
-Team Management
-      ↓
-Attendance Management
-      ↓
-Attendance History
-      ↓
-Individual Analytics
-      ↓
-Team Analytics
-      ↓
-Overall Club Analytics
-      ↓
-Low Attendance Review
+https://vit-mitra-attendance.vercel.app/
+```
+
+### Backend
+
+**Render**
+
+The backend can be deployed as a Python/FastAPI web service.
+
+### Database
+
+**Firebase Cloud Firestore**
+
+---
+
+# 🧪 Testing Checklist
+
+Before production use, verify:
+
+* [ ] Student registration
+* [ ] Student login
+* [ ] Administrator login
+* [ ] Authentication and authorization
+* [ ] Student profile
+* [ ] Student attendance
+* [ ] Attendance history
+* [ ] Mark Present
+* [ ] Mark Absent
+* [ ] Save attendance
+* [ ] Attendance percentage
+* [ ] Team filtering
+* [ ] Student search
+* [ ] Attendance threshold
+* [ ] Dashboard statistics
+* [ ] Firestore data persistence
+* [ ] Logout
+* [ ] Protected routes
+* [ ] Production API connection
+
+---
+
+# 🔮 Future Enhancements
+
+Potential future improvements include:
+
+* 📱 Progressive Web App / mobile support
+* 📷 QR-based attendance
+* 🤖 Face-recognition-based attendance with appropriate institutional and privacy approval
+* 📄 Excel/PDF attendance reports
+* 📧 Low-attendance notifications
+* 📱 WhatsApp/email notifications
+* 📝 Multiple attendance sessions per day
+* 📊 Advanced analytics
+* 🕵️ Audit logs
+* ☁️ Automated cloud backups
+* 🔔 Real-time notifications
+
+---
+
+# 🎓 Academic Context
+
+**Project:** VIT MITRA Club — Attendance Management & Analytics Platform
+
+**Institution:** Vishnu Institute of Technology, Bhimavaram
+
+**Domain:** Web Application Development • Attendance Management • Analytics • Cloud Computing
+
+**Primary Goal:** Digitize and centralize attendance management for VIT MITRA Club while providing students with transparent access to their attendance information.
+
+---
+
+# 👩‍💻 Project Repository
+
+### GitHub
+
+**[VIT-MITRA-Attendance-Portal](https://github.com/rekhaannapurna/VIT-MITRA-Attendance-Portal)**
+
+### Live Application
+
+**[🚀 VIT MITRA Attendance Portal](https://vit-mitra-attendance.vercel.app/)**
+
+---
+
+# ⭐ Project Highlights
+
+```text
+✔ Role-based Student & Admin Access
+✔ Centralized Attendance Management
+✔ Student Account Registration
+✔ Attendance History
+✔ Attendance Percentage Calculation
+✔ Team-wise Organization
+✔ Attendance Threshold Monitoring
+✔ Dashboard Analytics
+✔ Cloud Firestore Integration
+✔ Responsive Web Interface
+✔ Production Deployment
 ```
 
 ---
 
-# 📖 Documentation
+## 📜 License
 
-The project requirements are defined in:
-
-**Software Requirements Specification (SRS)**
-
-**Document:** VIT MITRA Club – Attendance Management & Analytics
-**Version:** 1.0
-
-The SRS defines the functional requirements, non-functional requirements, architecture, use cases, business rules, testing requirements, acceptance criteria, and future enhancements for the system.
+This project is developed for academic and institutional project purposes.
 
 ---
 
-# 🎓 Project Purpose
+<p align="center">
 
-The VIT MITRA Attendance Management & Analytics system is intended to provide a centralized and secure approach to managing club attendance.
+### 🎓 VIT MITRA CLUB
 
-It simplifies attendance marking for administrators, provides students with transparent access to their own attendance information, and enables meaningful attendance analysis at individual, team, and club levels.
+**Vishnu Institute of Technology**
 
----
+**Detect • Record • Analyze • Improve**
 
-# 👩‍💻 Development Team
+⭐ If you find this project useful, consider giving the repository a star.
 
-**VIT MITRA Club**
+</p>
 
-Developed as a web-based attendance management and analytics solution for VIT MITRA Club.
-
----
-
-## 📄 License
-
-This project is developed for academic and institutional purposes.
-
----
-
-## ⭐ Project Highlights
-
-* Role-based authentication
-* Student and Admin access
-* Student management
-* Team management
-* Daily attendance
-* Attendance history
-* Individual analytics
-* Weekly analytics
-* Monthly analytics
-* Team-wise analytics
-* Overall club analytics
-* Search and filtering
-* Low-attendance identification
-* Duplicate attendance prevention
-* Secure backend authorization
-* Responsive web interface
-
----
-
-## 📌 Conclusion
-
-The VIT MITRA Club Attendance Management & Analytics application provides a centralized solution for managing attendance, students, teams, and attendance analytics.
-
-By replacing manual attendance maintenance with a structured web-based system, the application aims to improve data consistency, simplify attendance operations, and provide transparent attendance insights for both administrators and students.
